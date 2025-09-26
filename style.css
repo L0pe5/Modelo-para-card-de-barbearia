@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000; 
+  color: #f4c430; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  text-align: center;
+  padding: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f4c430;
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header h1 {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 2rem auto;
+}
+
+.link-btn {
+  background: #f4c430; 
+  color: #000;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border: 1px solid #ffffff;
+}
+
+.link-btn:hover {
+  background: transparent;
+  color: #f4c430;
+  transform: scale(1.05);
+}
+
+.info {
+  background: #111;
+  border: 1px solid #f4c430;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  color: #f4c430;
+}
+
+.info h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #f4c430;
+}
+
+.info p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #eee;
+}
+
+footer {
+  margin-top: 1rem;
+  padding: 8px 0;
+  font-size: 1rem;
+  color: #666;
+  border-top: 1px solid #333;
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  .link-btn {
+    font-size: 1.2rem;
+  }
+  .info h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Contêiner do banner */
+.carousel-inner {
+  width: 100%;
+  max-width: 80%;      /* menos largo no desktop */
+  margin: 0 auto;      /* centraliza */
+  border-radius: 12px;
+  border: 2px solid #f4c430;
+  overflow: hidden;
+  text-align: center;
+  background: #000;    /* fundo preto atrás das imagens */
+}
+
+/* Imagens sem corte */
+.carousel-inner img {
+  max-height: 350px;   /* altura máxima */
+  width: auto;         /* ajusta a largura automaticamente */
+  margin: 0 auto;      /* centraliza */
+  display: block;
+  object-fit: contain; /* mostra a imagem inteira */
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    max-height: 250px; /* menor altura em telas pequenas */
+  }
+}
