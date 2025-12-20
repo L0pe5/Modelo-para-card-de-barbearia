@@ -147,3 +147,17 @@ footer {
     max-height: 250px; /* menor altura em telas pequenas */
   }
 }
+
+.mapa {
+  max-width: 100%;
+  margin: 1.5rem auto;
+  cursor: pointer;
+}
+
+.mapa-texto {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #f4c430;
+  text-align: center;
+}
